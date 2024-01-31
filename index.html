@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="huddle-image" class="logo-image">  
+            </div>
+            <div class="header-button btn">
+                Try It Free
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-title">
+                build the community your fans will love
+            </div>
+            <div class="hero-info">
+                Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+            </div>
+            <div class="hero-button">
+                Get Started For Free
+            </div>
+        </div>
+    </section>
+    <section class="mockups">
+        <img src="images/screen-mockups.svg" alt="" class="mockups-image">
+    </section>
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stats-logo">
+                <img src="images/icon-communities.svg" alt="">
+            </div>
+            <div class="stats-stats">1.4k+</div>
+            <div class="stats-info">communities formed</div>
+        </div>
+        <div class="stats-container">
+            <div class="stats-logo">
+                <img src="images/icon-messages.svg" alt="messages-logo">
+            </div>
+            <div class="stats-stats">2.7m+</div>
+            <div class="stats-info">messages sent</div>
+        </div>
+    </section>
+    <section class="bgdesk-top1">
+        <picture>
+            <source srcset="images/bg-section-bottom-desktop-1" media="(max-width: 375px)">
+            <img  src="images/bg-section-top-desktop-1.svg" alt="">
+        </picture>
+       
+    </section>
+    <section class="growth">
+        <div class="growth-container">
+            <div class="growth-title">
+                Grow Together
+            </div>
+            <div class="growth-text">
+                Generate meanigful discussions with your audience and build a  strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+            </div>
+        </div>
+        <div class="growth-image">
+            
+            <img src="images/illustration-grow-together.svg" alt="hrowth">
+        </div>
+    </section>
+    <section class="bgdesk-bot1">
+        <img src="images/bg-section-bottom-desktop-1.svg" alt="">
+    </section>
+    <section class="conversations">
+        <div class="conversations-image">
+            <img src="images/illustration-flowing-conversation.svg" alt="conversation">
+        </div>
+        <div class="conversations-text">
+            <div class="conversations-title">
+                Flowing Conversations
+            </div>
+            <div class="conversations-subtitle">
+                You wouldn't paginate a conversation in real life, so why do it online? Our Threads have just-in-time loading for a more natural flow.
+            </div>
+        </div>
+    </section>
+    <section class="bgdesk-top2">
+        <img src="images/bg-section-top-desktop-1.svg" alt="">
+    </section>
+    <section class="users">
+        <div class="users-container">
+            <div class="users-title">Your Users</div>
+            <div class="users-text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</div>
+        </div>
+        <div class="users-image">
+            <img src="images/illustration-your-users.svg" alt="">
+        </div>
+    </section>
+    <section class="bgdesk-bot2">
+        <img src="images/bg-section-bottom-desktop-2.svg" alt="">
+    </section>
+    <section class="ready">
+        <div class="ready-title">
+            Ready to build your community
+        </div>
+        <div class="ready-button">
+           <button class="btn"> get started for free</button>
+        </div>
+    </section>
+    <section class="bgdesk-top3">
+        <img src="images/bg-footer-top-desktop.svg" alt="">
+    </section>
+    <section class="footer">
+        <div class="left-section">
+            <div class="sect-logo">
+                <img class="footer-logo" src="images/logo.svg" alt="">
+            </div>
+            <div class="left-section-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit delectus quibusdam numquam consequuntur  
+            </div>
+            <div class="sect-contact">
+                <div class="phone"><i class='bx bx-phone-call'></i>
+                    <p>
+                    Phone: +1-543-123-4567
+                    </p> 
+                </div>
+                <div class="mail"><i class='bx bxl-gmail'></i> 
+                    <p>
+                        example@huddle.com
+                    </p>      
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="right-title">Newsletter</div>
+            <div class="right-section-text">
+                To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
+            </div>
+            <div class="subscribe-area">
+                <label for="mail"></label>
+                <input type="email" name="mail" class="subscribe-input">
+                <button type="submit" class="subscribe-button" onclick="validateEmail()">Subscribe</button>
+                <span class="error"></span>
+            </div>
+        </div>
+    </section>
+    <section class="social">
+        <div class="social-links">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-twitter' ></i>
+        </div>
+    </section>
+
+    <script>
+        function validateEmail() {
+            var emailInput = document.querySelector('.subscribe-input');
+            var emailError = document.querySelector('.error');
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailPattern.test(emailInput.value)) {
+                // Valid email format
+                emailError.innerHTML = '';
+                // You can submit the form or perform further actions here
+                // Example: document.getElementById('emailForm').submit();
+            } else {
+                // Invalid email format
+                emailError.innerHTML = 'Please enter a valid email address.';
+            }
+        }
+    </script>
+</body>
+</html>
